@@ -47,24 +47,28 @@ image1.addEventListener("click", () => {
         bouton.style.display = "block";
     }
   })
-
+// retirer bouton
   bouton.addEventListener("click", () => {
     bouton.parentNode.removeChild(bouton);
   })
-
-  function cliquerImage1 () {
-    let textNode = document.createTextNode("Hélas, ce n'est pas la bonne réponse."); document.body.appendChild(textNode);
-  }
-
-
-
-
-/*
-  let textNode = document.createTextNode("Hélas, ce n'est pas la bonne réponse."); document.body.appendChild(textNode);
+// afficher css mauvais choix
+  image1.addEventListener("click", function () {
+    alert(
+      "Hélas, ce n'est pas la bonne réponse.")
+    });
 
 
-  const para = document.createElement("p");
-const textNode = document.createTextNode("Hello World");
-para.appendChild(textNode);
+    image2.addEventListener("click", function () {
+        alert(
+          "Hélas, ce n'est pas la bonne réponse.")
+        });
 
-*/
+        
+  image3.addEventListener("click", function () {
+    alert(
+      "C'est la bonne réponse. Bravo!")
+    });
+
+    image2.addEventListener("click"), function () {
+        getComputedStyle(reponse);
+    }
